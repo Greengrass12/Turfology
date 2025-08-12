@@ -360,6 +360,11 @@
     display: block;
     border-radius: 10px;
   }
+  .before-after .image-box img.fit-contain {
+  object-fit: contain;  /* show the whole picture */
+  background-color: #000; /* optional, fills empty space if needed */
+}
+
  
 
 </style>
@@ -473,13 +478,14 @@
     </div>
     <div class="image-box slide-in-right">
       <h4>After</h4>
-      <img
-        src="/img/after-.jpg?v=4"
-        alt="Restored residential lawn in York PA after treating dry patches"
-        width="600"
-        height="400"
-        style="display:block;max-width:100%;height:auto"
-      />
+     <img
+  class="fit-contain"
+  src="/img/after-.jpg?v=4"
+  alt="Restored residential lawn in York PA after treating dry patches"
+  width="600"
+  height="400"
+/>
+
     </div>
   </div>
 </section>
