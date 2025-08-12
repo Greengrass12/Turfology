@@ -360,10 +360,13 @@
     display: block;
     border-radius: 10px;
   }
-  .before-after .image-box img.fit-contain {
-  object-fit: contain;  /* show the whole picture */
-  background-color: #000; /* optional, fills empty space if needed */
+.before-after .image-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the box without black bars */
 }
+
 
  
 
