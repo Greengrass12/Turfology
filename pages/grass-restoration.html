@@ -135,7 +135,7 @@
     margin-bottom: 10px;
   }
   header p {
-    font-size: 1.2em;
+    font-size: 1.2em; 
     max-width: 700px;
     margin: 0 auto;
   }
@@ -360,24 +360,7 @@
     display: block;
     border-radius: 10px;
   }
-  /* Force this section visible on phones */
-@media (max-width: 900px) {
-  .before-after .image-box img{
-    display:block !important;
-    max-width:100% !important;
-    height:auto !important;
-    opacity:1 !important;
-    visibility:visible !important;
-    transform:none !important;
-    position:static !important;
-  }
-  .before-after .slide-in-left,
-  .before-after .slide-in-right{
-    opacity:1 !important;
-    transform:none !important;
-  }
-  .before-after .image-box{ width:100% !important; z-index:1 !important; }
-}
+ 
 
 </style>
 
@@ -414,28 +397,32 @@
       </video>
     </div>
   </section>
- <div class="image-box">
-  <h4>Before</h4>
-  <img
-    src="https://turfology.net/img/beforee.jpeg?v=12"
-    alt="Before - residential yard in York PA"
-    width="600"
-    height="400"
-    style="display:block;max-width:100%;height:auto"
-  />
-</div>
-<div class="image-box">
-  <h4>After</h4>
-  <img
-    src="https://turfology.net/img/afterr1_fixed.jpg?v=12"
-    alt="After - residential yard in York PA"
-    width="600"
-    height="400"
-    style="display:block;max-width:100%;height:auto"
-  />
-</div>
-
-
+  <hr style="margin: 50px auto; width: 80%; border-top: 2px solid #ccc" />
+  <section class="before-after text-center" style="padding: 30px 20px">
+    <h2 style="margin-bottom: 30px">Before & After Photos</h2>
+    <div class="images">
+      <div class="image-box slide-in-left">
+        <h4>Before</h4>
+        <img
+          src="../img/beforee.jpeg"
+          alt="Residential yard in York PA with nearly no grass and mostly bare, dry dirt before restoration"
+          width="600"
+          height="400"
+          loading="lazy"
+        />
+      </div>
+      <div class="image-box slide-in-right">
+        <h4>After</h4>
+        <img
+          src="/img/afterr1_fixed.jpg?v=2"
+          alt="Residential yard in York PA with nearly no grass and mostly bare, dry dirt before restoration"
+          width="600"
+          height="400"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
 
   <hr style="margin: 50px auto; width: 80%; border-top: 2px solid #ccc" />
 
