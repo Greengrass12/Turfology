@@ -689,13 +689,3 @@ label {
 #testimonial.owl-carousel .owl-dot:hover span {
   background-color: #2c6e1e !important; /* Turfology green for active */
 }
-.map{
-  display:block !important;
-  width:100% !important;
-  min-height:400px !important;  /* iPad needs a real height */
-  border:0 !important;
-}
-
-@media (min-width:768px) and (max-width:1024px){
-  .map{ min-height:450px !important; }
-}
