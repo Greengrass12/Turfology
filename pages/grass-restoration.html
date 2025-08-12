@@ -366,6 +366,19 @@
   height: 100%;
   object-fit: cover; /* fills the box without black bars */
 }
+  .before-after .image-box { display:flex; flex-direction:column; }
+.before-after .images { display:flex; flex-wrap:wrap; gap:16px; align-items:stretch; }
+
+.before-after .image-wrap { aspect-ratio:4/3; width:100%; overflow:hidden; border-radius:10px; }
+.before-after .image-wrap img { display:block; width:100%; height:100%; object-fit:cover; }
+
+@media (min-width:768px) and (max-width:1024px){
+  .before-after .image-box { flex:1 1 calc(50% - 16px); max-width:calc(50% - 16px); }
+}
+@media (max-width:767px){
+  .before-after .image-box { flex:1 1 100%; max-width:100%; }
+}
+
 
 
  
@@ -496,23 +509,39 @@
 
   <hr style="margin: 50px auto; width: 80%; border-top: 2px solid #ccc" />
 
-  <section class="before-after text-center" style="padding: 30px 20px">
-    <h2 style="margin-bottom: 30px">Before & After Photos</h2>
-    <h3 style="margin-bottom: 30px">
-      This project was done at Wisehaven pool, one of this year's major
-      renovations.
-    </h3>
-    <div class="images">
-      <div class="image-box slide-in-left">
-        <h4>Before</h4>
+<section class="before-after text-center" style="padding: 30px 20px">
+  <h2 style="margin-bottom: 30px">Before & After Photos</h2>
+  <h3 style="margin-bottom: 30px">
+    This project was done at Wisehaven pool, one of this year's major renovations.
+  </h3>
+
+  <div class="images">
+    <!-- BEFORE -->
+    <div class="image-box slide-in-left">
+      <h4>Before</h4>
+      <div class="image-wrap">
         <img
-          src="../img/lawn-before.jpeg"
+          src="/img/lawn-before.jpeg?v=9"
           alt="Torn-up muddy grass at Wisehaven Pool in York PA before lawn restoration"
-          width="600"
-          height="400"
-          loading="lazy"
+          width="600" height="400"
         />
       </div>
+    </div>
+
+    <!-- AFTER -->
+    <div class="image-box slide-in-right">
+      <h4>After</h4>
+      <div class="image-wrap">
+        <img
+          src="/img/lawn-after.jpeg?v=9"
+          alt="Lush green lawn at Wisehaven Pool in York PA after full restoration and seeding"
+          width="600" height="400"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
       <div class="image-box slide-in-right">
         <h4>After</h4>
     <img
